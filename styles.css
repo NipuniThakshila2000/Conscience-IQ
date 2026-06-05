@@ -269,6 +269,15 @@ input[type="reset"],
   margin-bottom: 26px;
 }
 
+.press-label h2 {
+  margin: 0;
+  color: var(--blue);
+  font-family: "CIQ Cormorant", Georgia, serif;
+  font-size: clamp(52px, 4.4vw, 72px);
+  line-height: 1.02;
+  font-weight: 400;
+}
+
 .press-label p {
   display: block;
   max-width: 920px;
@@ -1436,8 +1445,8 @@ input[type="reset"],
   }
 
   .press-label h2 {
-    font-size: 28px;
-    line-height: 1.15;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.18;
   }
 
   .press-label p {
@@ -1820,7 +1829,7 @@ input[type="reset"],
   }
 
   .press-label h2 {
-    font-size: 24px;
+    font-size: clamp(22px, 6.8vw, 28px);
   }
 
   .press-label p {
