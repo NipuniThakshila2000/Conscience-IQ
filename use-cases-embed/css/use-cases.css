@@ -597,6 +597,10 @@ h2 {
 }
 
 @media (max-width: 700px) {
+  body {
+    background: linear-gradient(180deg, var(--paper), var(--ivory) 62%, var(--paper));
+  }
+
   .section {
     width: min(100% - 24px, 1180px);
     padding: 56px 0;
@@ -638,6 +642,17 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .dashboard {
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .metric-card {
+    min-height: auto;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
   .metric-card.wide {
     grid-column: auto;
   }
@@ -648,15 +663,17 @@ h2 {
 
   .image-card,
   .image-card.large {
-    min-height: 310px;
+    min-height: 0;
   }
 
   .video-card {
     min-height: 0;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
   }
 
   .feature,
+  .text-card,
+  .product-panel,
   .partnership,
   .final-cta {
     padding: 24px;
@@ -679,11 +696,30 @@ h2 {
   .secure-mark img {
     width: min(92%, 420px);
   }
+
+  .workflow-item {
+    grid-template-columns: 34px 1fr;
+    padding: 12px;
+  }
+
+  .icon {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 @media (max-width: 420px) {
   .section {
     width: min(100% - 18px, 1180px);
+    padding: 44px 0;
+  }
+
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 
   .feature,
@@ -699,5 +735,9 @@ h2 {
   .chip {
     width: 100%;
     text-align: center;
+  }
+
+  .partnership {
+    gap: 20px;
   }
 }
