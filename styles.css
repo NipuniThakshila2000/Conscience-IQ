@@ -748,6 +748,18 @@ input[type="reset"],
   padding: 80px 0;
 }
 
+.use-cases-shell {
+  margin-top: 86px;
+  background: #fff;
+}
+
+.use-cases-shell iframe {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - 86px);
+  border: 0;
+}
+
 .profile-page {
   display: grid;
   grid-template-columns: 360px 1fr;

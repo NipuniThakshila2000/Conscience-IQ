@@ -15,19 +15,27 @@
         <a href="use-cases.html">Use Cases</a>
       </nav>
     </header>
-    <main class="page-main simple-page">
-      <h1>USE CASES</h1>
-      <p>Conscience IQ can support ethical awareness, responsibility, and challenge-skill balance across human and algorithmic systems.</p>
-      <p>Key use cases include leadership development, AI ethics review, education, civic policy, workplace well-being, and flow-readiness assessment.</p>
-      <img class="plane" src="Images/214303b180e9acf7f811251fec10bd12.png" alt="" />
+
+    <main class="use-cases-shell">
+      <iframe
+        id="use-cases-frame"
+        title="Conscience IQ Use Cases"
+        src="use-cases-embed/use-cases.html"
+        loading="eager"
+      ></iframe>
     </main>
-    <footer class="site-footer">
-      <img src="Images/footerBreak_1280-ezgif.com-webp-to-png-converter (1).png" alt="" />
-      <div class="footer-panel">
-        <a class="footer-brand" href="index.html">CONSCIENCE IQ</a>
-        <p class="footer-copyright">2025 &copy; Conscience IQ | All Rights Reserved</p>
-      </div>
-    </footer>
+
     <script src="script.js"></script>
+    <script>
+      const useCasesFrame = document.getElementById("use-cases-frame");
+
+      window.addEventListener("message", (event) => {
+        if (event.data?.source !== "ciq-use-case" || event.data.type !== "resize") {
+          return;
+        }
+
+        useCasesFrame.style.height = `${event.data.height}px`;
+      });
+    </script>
   </body>
 </html>
