@@ -1176,6 +1176,49 @@ input[type="reset"],
   }
 }
 
+@media (max-width: 1366px) and (min-width: 901px) {
+  .statement {
+    margin-top: 88px;
+  }
+
+  .statement p {
+    width: min(1100px, 100%);
+    font-size: 35px !important;
+    line-height: 1.14;
+  }
+
+  .statement img {
+    width: min(720px, 66vw);
+    max-width: 66vw;
+    margin-top: 94px;
+    margin-left: -6px;
+  }
+
+  .roots-copy h2 {
+    font-size: 68px;
+  }
+
+  .cards h3 {
+    font-size: 48px;
+  }
+
+  .flow {
+    gap: 72px;
+  }
+
+  .flow-copy h2 {
+    font-size: 52px;
+  }
+
+  .section-label h2 {
+    font-size: 34px;
+  }
+
+  .mission {
+    font-size: 34px;
+  }
+}
+
 @media (max-width: 900px) {
   :root { --page: calc(100vw - 34px); }
 
