@@ -1291,6 +1291,66 @@ input[type="reset"],
   }
 }
 
+@media (max-width: 1300px) and (min-width: 1201px) {
+  .hero {
+    height: 540px;
+  }
+
+  .intro {
+    min-height: 430px;
+    padding-top: 44px;
+    gap: 58px;
+  }
+
+  .scale {
+    width: 360px;
+    margin-top: 18px;
+  }
+
+  .press-label h2 {
+    font-size: 54px;
+  }
+
+  .press-feature {
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .press-copy h3 {
+    font-size: 46px;
+  }
+
+  .press-lead {
+    font-size: 18px !important;
+  }
+
+  .statement {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+    gap: 36px;
+    align-items: center;
+    margin-top: 38px;
+    padding-top: 16px;
+  }
+
+  .statement p {
+    width: 100%;
+    font-size: 30px !important;
+    line-height: 1.12;
+  }
+
+  .statement img {
+    width: min(460px, 34vw);
+    max-width: 34vw;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .roots-art {
+    margin-top: 90px;
+  }
+}
+
 @media (max-width: 900px) {
   :root { --page: calc(100vw - 34px); }
 
