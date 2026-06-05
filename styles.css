@@ -1386,21 +1386,45 @@ input[type="reset"],
   }
 
   .hero-title {
-    width: calc(100vw - 44px);
+    top: 38%;
+    width: min(320px, calc(100vw - 48px));
   }
 
   .hero-title::before {
-    inset: -18px -16px -16px;
-    border-radius: 20px;
+    display: none;
   }
 
   .hero-title h1 {
-    font-size: clamp(34px, 11vw, 44px);
+    display: none;
   }
 
-  .hero-kicker,
+  .hero-kicker {
+    font-size: 13px !important;
+    line-height: 1.35;
+    text-transform: uppercase;
+    white-space: pre-line;
+  }
+
+  .hero-kicker::after {
+    content: "\A CONSCIENCE IQ\A THEORY";
+  }
+
   .hero-tagline {
-    font-size: 16px !important;
+    margin-top: 8px !important;
+    font-size: clamp(30px, 8.8vw, 40px) !important;
+    line-height: .93;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  .hero-title::after {
+    content: "\2193";
+    display: block;
+    margin-top: 24px;
+    color: var(--blue);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    line-height: 1;
   }
 
   .intro {
@@ -1657,6 +1681,24 @@ input[type="reset"],
   .hero > img {
     width: 980px;
     min-width: 980px;
+  }
+
+  .hero-title {
+    top: 39%;
+    width: min(300px, calc(100vw - 44px));
+  }
+
+  .hero-kicker {
+    font-size: 12px !important;
+  }
+
+  .hero-tagline {
+    font-size: clamp(29px, 9vw, 36px) !important;
+  }
+
+  .hero-title::after {
+    margin-top: 20px;
+    font-size: 38px;
   }
 
   .statement p,
