@@ -210,18 +210,6 @@ input[type="reset"],
   font-weight: 400;
 }
 
-.hero-plane {
-  position: absolute;
-  right: clamp(24px, 6vw, 90px);
-  bottom: 22px;
-  z-index: 1;
-  width: min(360px, 27vw);
-  height: auto;
-  mix-blend-mode: multiply;
-  background: transparent;
-  pointer-events: none;
-}
-
 .hero-kicker {
   font-family: "CIQ Cormorant", Georgia, serif !important;
   font-size: 25px !important;
@@ -270,6 +258,22 @@ input[type="reset"],
 
 .intro-copy p {
   margin: 0 0 29px;
+}
+
+.plane-break {
+  width: var(--page);
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plane-break img {
+  display: block;
+  width: min(560px, 44vw);
+  height: auto;
+  mix-blend-mode: multiply;
+  background: transparent;
 }
 
 .press {
@@ -1240,10 +1244,6 @@ input[type="reset"],
   .hero > img {
     width: 1600px;
     min-width: 1600px;
-  }
-
-  .hero-plane {
-    display: none;
   }
 
   .hero-title {
