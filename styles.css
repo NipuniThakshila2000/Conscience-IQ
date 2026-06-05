@@ -22,13 +22,18 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background: #fff;
   color: var(--ink);
   font-family: "Wix Madefor Text", Arial, sans-serif;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -1336,6 +1341,17 @@ input[type="reset"],
 }
 
 @media (max-width: 700px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
   :root {
     --page: calc(100vw - 24px);
   }
@@ -1467,7 +1483,7 @@ input[type="reset"],
 
   .roots-art {
     grid-template-columns: 1fr 1fr;
-    width: 100vw;
+    width: 100%;
     margin-top: 58px;
     align-items: end;
   }
@@ -1724,8 +1740,8 @@ input[type="reset"],
   .site-footer > img {
     top: 0;
     right: auto;
-    left: calc(50% - 50vw);
-    width: 100vw;
+    left: 0;
+    width: 100%;
     max-width: none;
     transform: none;
   }
