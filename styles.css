@@ -1541,12 +1541,12 @@ input[type="reset"],
 
   .transform::before {
     top: -8px;
-    left: -88px;
+    left: -42px;
     background-position: left top;
   }
 
   .transform::after {
-    right: -86px;
+    right: -38px;
     bottom: 24px;
     background-position: right bottom;
   }
@@ -1773,6 +1773,14 @@ input[type="reset"],
   .transform::after {
     width: 118px;
     height: 244px;
+  }
+
+  .transform::before {
+    left: -34px;
+  }
+
+  .transform::after {
+    right: -30px;
   }
 
   .transform h2 {
