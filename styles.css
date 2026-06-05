@@ -1381,10 +1381,22 @@ input[type="reset"],
   .menu-toggle {
     top: 20px;
     right: 4px;
-    min-width: 72px;
+    min-width: 0;
+    width: 46px;
     height: 36px;
-    padding: 0 14px;
-    font-size: 13px !important;
+    padding: 0;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0 !important;
+  }
+
+  .menu-toggle::before {
+    content: "";
+    width: 18px;
+    height: 12px;
+    border-top: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
+    background: linear-gradient(var(--blue), var(--blue)) center / 100% 2px no-repeat;
   }
 
   .site-nav {
