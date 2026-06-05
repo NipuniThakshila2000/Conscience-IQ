@@ -1491,7 +1491,13 @@ input[type="reset"],
   }
 
   .roots-copy h2 {
-    display: none;
+    display: block;
+    margin: 34px 0 0;
+    color: var(--blue);
+    font-family: "CIQ Cormorant", Georgia, serif;
+    font-size: clamp(24px, 6.4vw, 32px);
+    line-height: 1.38;
+    font-weight: 400;
   }
 
   .cards {
