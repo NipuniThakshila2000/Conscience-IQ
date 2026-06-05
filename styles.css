@@ -1466,12 +1466,32 @@ input[type="reset"],
   }
 
   .roots-art {
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
     margin-top: 58px;
+    align-items: end;
+  }
+
+  .roots-art img {
+    width: 100%;
+  }
+
+  .roots-copy {
+    width: calc(100vw - 36px);
+    margin-top: 28px;
+  }
+
+  .roots-copy p {
+    display: block;
+    color: var(--ink);
+    font-family: "Cormorant Garamond", Georgia, serif !important;
+    font-size: clamp(25px, 7.2vw, 34px) !important;
+    line-height: 1.03;
+    text-align: left;
   }
 
   .roots-copy h2 {
-    font-size: clamp(38px, 12vw, 52px);
-    line-height: 1;
+    display: none;
   }
 
   .cards {
