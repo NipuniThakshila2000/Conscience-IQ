@@ -260,22 +260,6 @@ input[type="reset"],
   margin: 0 0 29px;
 }
 
-.plane-break {
-  width: var(--page);
-  margin: 18px auto 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.plane-break img {
-  display: block;
-  width: min(560px, 44vw);
-  height: auto;
-  mix-blend-mode: multiply;
-  background: transparent;
-}
-
 .press {
   width: var(--page);
   margin: 10px auto 0;
