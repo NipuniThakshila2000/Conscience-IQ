@@ -1377,17 +1377,24 @@ input[type="reset"],
   }
 
   .hero {
-    height: 600px;
+    height: 650px;
+    height: calc(100svh - 74px);
+    min-height: 560px;
+    max-height: 680px;
   }
 
   .hero > img {
-    width: 1140px;
-    min-width: 1140px;
+    left: 0;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    object-fit: fill;
+    transform: none;
   }
 
   .hero-title {
-    top: 38%;
-    width: min(320px, calc(100vw - 48px));
+    top: 36%;
+    width: min(310px, calc(100vw - 50px));
   }
 
   .hero-title::before {
@@ -1675,16 +1682,18 @@ input[type="reset"],
   }
 
   .hero {
-    height: 520px;
+    height: calc(100svh - 74px);
+    min-height: 520px;
+    max-height: 650px;
   }
 
   .hero > img {
-    width: 980px;
-    min-width: 980px;
+    width: 100%;
+    min-width: 0;
   }
 
   .hero-title {
-    top: 39%;
+    top: 36%;
     width: min(300px, calc(100vw - 44px));
   }
 
