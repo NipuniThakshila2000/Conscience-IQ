@@ -243,7 +243,6 @@ input[type="reset"],
 }
 
 .scale,
-.statement img,
 .roots-art img,
 .simple-page .plane {
   mix-blend-mode: multiply;
@@ -390,14 +389,6 @@ input[type="reset"],
   font-size: 40px !important;
   font-weight: 400 !important;
   line-height: 1.16;
-}
-
-.statement img {
-  display: block;
-  width: 760px;
-  max-width: 62vw;
-  margin: 118px 0 0 -24px;
-  transform-origin: 55% 50%;
 }
 
 .roots-art {
