@@ -1724,10 +1724,17 @@ input[type="reset"],
   .site-footer > img {
     top: 0;
     right: auto;
-    left: 50%;
+    left: calc(50% - 50vw);
     width: 100vw;
     max-width: none;
-    transform: translateX(-50%);
+    transform: none;
+  }
+
+  .animations-ready .site-footer > img.reveal,
+  .animations-ready .site-footer > img.reveal.is-visible,
+  .animations-ready .site-footer > img.from-right,
+  .animations-ready .site-footer > img.from-right.is-visible {
+    transform: none;
   }
 
   .footer-panel {
